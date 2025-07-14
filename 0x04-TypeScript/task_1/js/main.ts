@@ -16,7 +16,7 @@ const mick: Teacher = {
     yearsOfExperience: 20,
     location: "London",
     contract: false, // Optional property
-    subject: "Music" // Additional property
+    subject: "Music" // Additional propert
 }
 
 // Function to print teacher details

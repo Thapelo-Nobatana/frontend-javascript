@@ -29,7 +29,7 @@ function displayStudents(students: Array<Student>): void {
     const table = document.createElement("table");
     const headerRow = document.createElement("tr");
 
-    // Create table headers
+    // Creating table headers
     const headers = ["First Name", "Last Name", "Age", "Location"];
     headers.forEach(headerText => {
         const header = document.createElement("th");
@@ -38,7 +38,7 @@ function displayStudents(students: Array<Student>): void {
     });
     table.appendChild(headerRow);
 
-    // Create rows for each student
+    // Creating rows for each student
     students.forEach(student => {
         const row = document.createElement("tr");
         const cells = [
@@ -55,6 +55,6 @@ function displayStudents(students: Array<Student>): void {
         table.appendChild(row);
     });
 
-    // Append the table to the body
+    // Appending the table to the body
     document.body.appendChild(table);
 }

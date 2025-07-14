@@ -34,3 +34,8 @@ function printTeacherDetails(teacher: Teacher): void {
 interface Director extends Teacher {
     numberOfReports: number;
 }
+
+// writing a function that named printTeache, it accepts two arguments firstName and lastName
+function printTeacher(firstName: string, lastName: string): string {
+    return `${firstName.charAt(0)}. ${lastName}`;
+}

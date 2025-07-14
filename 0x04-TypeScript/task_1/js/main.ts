@@ -29,3 +29,8 @@ function printTeacherDetails(teacher: Teacher): void {
         console.log(`Contract: ${teacher.contract}`);
     }
 }
+
+// interface named Directors that extends Teacher
+interface Director extends Teacher {
+    numberOfReports: number;
+}

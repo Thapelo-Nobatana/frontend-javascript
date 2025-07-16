@@ -39,3 +39,36 @@ interface Director extends Teacher {
 function printTeacher(firstName: string, lastName: string): string {
     return `${firstName.charAt(0)}. ${lastName}`;
 }
+
+// writing a Class named StudentClass the contructor accepts firstName and lastName
+class StudentClass implements StudentInterface {
+    firstName: string;
+    lastName: string;
+    constructor(firstName: string, lastName: string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+// Method named workOnHomework that returns a string
+    workOnHomework(): string {
+        return "Currently working";
+    }
+// Method named displayName that returns a string
+    displayName(): string {
+        return this.firstName;
+    }
+}
+
+
+
+// the contstrutor of the class should be described through the interface   
+interface StudentConstructor {
+    new (firstName: string, lastName: string): StudentClass;
+}
+// the class should be described through an interface
+interface StudentInterface {
+    firstName: string;
+    lastName: string;
+    workOnHomework(): string;
+    displayName(): string;
+}
